@@ -121,11 +121,9 @@ export default function Profile() {
                   <div className="flex flex-wrap justify-center">
                     <div className="w-full lg:w-9/12 px-4">
                       <p className="mb-4 text-lg leading-relaxed text-gray-800">
-                        An artist of considerable range, Jenna the name taken by
-                        Melbourne-raised, Brooklyn-based Nick Murphy writes,
-                        performs and records all of his own music, giving it a
-                        warm, intimate feel with a solid groove structure. An
-                        artist of considerable range.
+                      Brazilian, I study Information Systems at the University, I work as a Full Stack developer at Nexa Tecnologia. 
+                      I have Javascript domain, I build scalable APIs using Node.js and beautiful and responsive pages using Next.js. 
+                      I’ve also worked on building mobile apps with Flutter.
                       </p>
                       <a
                         href="#pablo"
