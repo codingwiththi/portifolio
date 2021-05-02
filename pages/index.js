@@ -1,9 +1,8 @@
 import React from "react";
-import Image from 'next/image'
+import Image from "next/image";
 
 import Navbar from "../components/Navbar.js";
 import Footer from "../components/Footer.js";
-
 
 export default function Profile() {
   return (
@@ -15,7 +14,7 @@ export default function Profile() {
             className="absolute top-0 w-full h-full bg-center bg-cover"
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80')"
+                "url('https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80')",
             }}
           >
             <span
@@ -109,7 +108,7 @@ export default function Profile() {
                   </div>
                   <div className="mb-2 text-gray-700 mt-10">
                     <i className="fas fa-briefcase mr-2 text-lg text-gray-500"></i>
-                    Full Stack Developer - 
+                    Full Stack Developer -
                     <a href="https://www.nexa.com.br"> Nexa Tecnologia</a>
                   </div>
                   <div className="mb-2 text-gray-700">
@@ -121,17 +120,13 @@ export default function Profile() {
                   <div className="flex flex-wrap justify-center">
                     <div className="w-full lg:w-9/12 px-4">
                       <p className="mb-4 text-lg leading-relaxed text-gray-800">
-                      Brazilian, I study Information Systems at the University, I work as a Full Stack developer at Nexa Tecnologia. 
-                      I have Javascript domain, I build scalable APIs using Node.js and beautiful and responsive pages using Next.js. 
-                      I’ve also worked on building mobile apps with Flutter.
+                        Brazilian, I study Information Systems at the
+                        University, I work as a Full Stack developer at Nexa
+                        Tecnologia. I have Javascript domain, I build scalable
+                        APIs using Node.js and beautiful and responsive pages
+                        using Next.js. I’ve also worked on building mobile apps
+                        with Flutter.
                       </p>
-                      <a
-                        href="#pablo"
-                        className="font-normal text-pink-500"
-                        onClick={e => e.preventDefault()}
-                      >
-                        Show more
-                      </a>
                     </div>
                   </div>
                 </div>
