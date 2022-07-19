@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "wght";
+    src: url("../public/fonts/EduVICWANTBeginner-VariableFont_wght.ttf");
+  }

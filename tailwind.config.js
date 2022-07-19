@@ -42,6 +42,11 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      thi1: "#f2e9e4",
+      thi2: "#c9ada7",
+      thi3: "#9a8c98",
+      thi4: "#4a4e69",
+      thi5: "#22223b",
     }),
     columns: {
       auto: "auto",
@@ -369,6 +374,7 @@ module.exports = {
         '"Segoe UI Emoji"',
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
+        "wght",
       ],
       serif: [
         "ui-serif",
