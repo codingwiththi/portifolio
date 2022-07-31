@@ -29,15 +29,22 @@ function Hero() {
               </button>
             </div>
           </div>
-          <div className="hidden lg:flex flex-1 justify-end items-center h-full">
-            <Image
-              src={WomanImg}
-              alt=""
-              layout="fixed"
-              width={300}
-              height={300}
-              quality={100}
-            />
+          <div className=" min-h-screen lg:flex flex-1 justify-center items-center  bg-gray-50">
+            <div className="relative w-full max-w-lg px-16">
+              <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply"></div>
+              <div className="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply"></div>
+              <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply"></div>
+              <div className="opacity-0">
+                <Image
+                  src={WomanImg}
+                  alt=""
+                  layout="fixed"
+                  width={300}
+                  height={300}
+                  quality={100}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
