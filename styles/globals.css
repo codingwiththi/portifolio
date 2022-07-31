@@ -6,3 +6,8 @@
     font-family: "wght";
     src: url("../public/fonts/EduVICWANTBeginner-VariableFont_wght.ttf");
   }
+
+  @font-face {
+    font-family: "satisfy";
+    src: url("../public/fonts/Satisfy-Regular.ttf");
+  }

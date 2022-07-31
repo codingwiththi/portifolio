@@ -4,9 +4,7 @@ import { Popover, Transition } from "@headlessui/react";
 import {
   HomeIcon,
   IdentificationIcon,
-  CursorClickIcon,
   MenuIcon,
-  RefreshIcon,
   PresentationChartBarIcon,
   XIcon,
   AdjustmentsIcon,
@@ -60,12 +58,12 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Popover className="relative bg-thi5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center border-b-2 border-thi2 py-2 md:justify-start md:space-x-10">
-          <div className="flex justify-start lg:w-0 lg:flex-1">
+    <Popover className="relative ">
+      <div className=" mx-auto px-8 py-2 ">
+        <div className="flex justify-between items-center p-4 md:justify-start md:space-x-10 ">
+          <div className="flex justify-start lg:w-0 lg:flex-1 ">
             <Link href="#">
-              <a className="font-[wght] text-2xl font-bold text-thi1 hover:text-thi2 ">
+              <a className="font-[satisfy] text-4xl  text-thi1 hover:text-thi2 ">
                 Coding With Thi.
               </a>
             </Link>
@@ -77,10 +75,10 @@ export default function Navbar() {
             </Popover.Button>
           </div>
 
-          <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0 p-2">
+          <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0 ">
             {menu.map((item) => (
               <Link href={item.href} key={item.name}>
-                <a className="text-base font-medium text-thi1 hover:text-thi2 m-3">
+                <a className="text-base font-medium text-thi1 hover:text-thi2 ml-5 mt-3 mb-3">
                   {item.name}
                 </a>
               </Link>
@@ -108,7 +106,7 @@ export default function Navbar() {
                 <div>
                   <Link href="#">
                     <a className="font-[wght] text-xl font-semibold text-thi5">
-                      Coding With Thi.
+                      Coding
                     </a>
                   </Link>
                 </div>
