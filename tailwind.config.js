@@ -42,11 +42,11 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
-      thi1: "#f3e8ee",
-      thi2: "#bacdb0",
-      thi3: "#729b79",
-      thi4: "#475b63",
-      thi5: "#2e2c2f",
+      thi1: "#FEFAE0",
+      thi2: "#DDA15E",
+      thi3: "#BC6C25",
+      thi4: "#606C38",
+      thi5: "#283618",
     }),
     columns: {
       auto: "auto",
@@ -119,6 +119,7 @@ module.exports = {
       ping: "ping 1s cubic-bezier(0, 0, 0.2, 1) infinite",
       pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       bounce: "bounce 1s infinite",
+      blob: "blob 7s infinite",
     },
     aspectRatio: {
       auto: "auto",
@@ -574,6 +575,20 @@ module.exports = {
       full: "100%",
     }),
     keyframes: {
+      blob: {
+        "0%": {
+          transform: "translate(0px, 0px) scale(1)",
+        },
+        "33%": {
+          transform: "translate(30px, -50px) scale(1.1)",
+        },
+        "66%": {
+          transform: "translate(-20px, 20px) scale(0.9)",
+        },
+        "100%": {
+          transform: "tranlate(0px, 0px) scale(1)",
+        },
+      },
       spin: {
         to: {
           transform: "rotate(360deg)",

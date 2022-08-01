@@ -60,16 +60,16 @@ export default function Navbar() {
   return (
     <Popover className="relative ">
       <div className=" mx-auto px-8 py-2 ">
-        <div className="flex justify-between items-center p-4 md:justify-start md:space-x-10 ">
+        <div className="flex justify-between items-center p-4 md:justify-start md:space-x-10 border-b-2 border-thi3">
           <div className="flex justify-start lg:w-0 lg:flex-1 ">
             <Link href="#">
-              <a className="font-[satisfy] text-4xl  text-thi1 hover:text-thi2 ">
+              <a className="font-[satisfy] text-4xl  text-thi5 hover:text-thi2 ">
                 Coding With Thi.
               </a>
             </Link>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
-            <Popover.Button className="bg-thi2 rounded-md p-2 inline-flex items-center justify-center text-thi1 hover:text-thi5 hover:bg-thi1 hover:border hover:border-thi3 border border-thi1 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <Popover.Button className="bg-thi2 rounded-md p-2 inline-flex items-center justify-center text-thi5 hover:text-thi5 hover:bg-thi1 hover:border hover:border-thi3 border border-thi1 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
               <span className="sr-only">Abrir Menu</span>
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
@@ -78,7 +78,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0 ">
             {menu.map((item) => (
               <Link href={item.href} key={item.name}>
-                <a className="text-base font-medium text-thi1 hover:text-thi2 ml-5 mt-3 mb-3">
+                <a className="text-base font-medium text-thi5 hover:text-thi2 ml-5 mt-3 mb-3">
                   {item.name}
                 </a>
               </Link>
