@@ -47,13 +47,18 @@ export default function Navbar({ language, setLanguage }) {
                     <div className="flex flex-row">
                         <div className="flex items-center justify-end  ">
                             {menu.map((item) => (
-                                <Link
-                                    href={item.href}
+                                <Tooltip
+                                    title={item.name}
+                                    arrow
                                     key={item.name}
-                                    className="text-base font-medium text-thi5 hover:text-thi3 ml-5 mt-3 mb-3"
                                 >
-                                    {item.icon}
-                                </Link>
+                                    <Link
+                                        href={item.href}
+                                        className="text-base font-medium text-thi5 hover:text-thi3 ml-5 mt-3 mb-3"
+                                    >
+                                        {item.icon}
+                                    </Link>
+                                </Tooltip>
                             ))}
                         </div>
                         <div className="flex items-center justify-end ml-5">
