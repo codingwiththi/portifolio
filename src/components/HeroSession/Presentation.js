@@ -38,8 +38,8 @@ function Presentation({ language }) {
                     duration={500}
                     className="relative px-6 py-3 mt-16 font-bold text-white group"
                 >
-                    <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-thi3 rounded-md group-hover:translate-x-0 group-hover:translate-y-0"></span>
-                    <span className="absolute inset-0 w-full h-full border-4 border-thi5 rounded-md"></span>
+                    <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-thi5 rounded-md group-hover:translate-x-0 group-hover:translate-y-0"></span>
+                    <span className="absolute inset-0 w-full h-full border-4 border-thi3 rounded-md"></span>
                     <span className="relative">{buttonText}</span>
                 </Link>
             </div>

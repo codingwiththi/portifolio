@@ -1,36 +1,11 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Popover, Transition } from "@headlessui/react";
+import { Popover } from "@headlessui/react";
 import Tooltip from "@mui/material/Tooltip";
-import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
-import { GiBrazilFlag, GiUsaFlag } from "react-icons/gi";
 
 import Link from "next/link";
-import { Fragment } from "react";
 import ReactCountryFlag from "react-country-flag";
 
-const menu = [
-    {
-        name: "Linkedin",
-        href: "/inicio",
-        icon: <BsLinkedin />,
-    },
-    {
-        name: "Instagram",
-        href: "/sobre",
-        icon: <BsInstagram />,
-    },
-    {
-        name: "Github",
-        href: "/habilidades",
-        icon: <BsGithub />,
-    },
-];
-
-function classNames(...classes) {
-    return classes.filter(Boolean).join(" ");
-}
-
-export default function Navbar({ language, setLanguage }) {
+export default function Navbar({ language, setLanguage, menu }) {
     return (
         <Popover className="relative ">
             <div className=" mx-auto px-8 py-2 ">
@@ -46,7 +21,7 @@ export default function Navbar({ language, setLanguage }) {
 
                     <div className="flex flex-row">
                         <div className="flex items-center justify-end  ">
-                            {menu.map((item) => (
+                            {menu?.map((item) => (
                                 <Tooltip
                                     title={item.name}
                                     arrow
@@ -54,7 +29,7 @@ export default function Navbar({ language, setLanguage }) {
                                 >
                                     <Link
                                         href={item.href}
-                                        className="text-base font-medium text-thi5 hover:text-thi3 ml-5 mt-3 mb-3"
+                                        className="text-base font-medium text-thi5 hover:text-thi4 ml-5 mt-3 mb-3"
                                     >
                                         {item.icon}
                                     </Link>
