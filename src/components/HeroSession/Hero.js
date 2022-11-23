@@ -6,6 +6,7 @@ function Hero({ language }) {
     return (
         <section
             id="home"
+
             className=" lg:h-[85vh] flex items-center portrait:items-start  lg:bg-cover lg:bg-center lg:bg-no-repeat  overflow-hidden  portrait:h-full portrait:pb-4"
         >
             <div className="container mx-auto ">
@@ -16,6 +17,7 @@ function Hero({ language }) {
                     <div className="flex flex-col portrait:flex-row w-1/3 portrait:w-full ">
                         <ProfileImage />
                     </div>
+
                 </div>
             </div>
         </section>
