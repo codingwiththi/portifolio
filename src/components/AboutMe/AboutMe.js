@@ -54,7 +54,7 @@ export default function AboutMe({ language }) {
                                         <h3 className="text-lg font-semibold  text-thi1">
                                             {skill.title}
                                         </h3>
-                                        <ul className="grid grid-cols-3 portrait:grid-cols-2 sm:grid-cols-1 ">
+                                        <ul className="grid grid-cols-3 portrait:grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
                                             {skill.list.map((item) => (
                                                 <li key={item}>
                                                     <div className="bg-thi4 hover:bg-thi1 hover:text-thi5 p-2 m-1 rounded-md">
