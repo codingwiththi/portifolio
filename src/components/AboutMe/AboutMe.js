@@ -25,12 +25,16 @@ export default function AboutMe({ language }) {
     return (
         <>
             <section id="about" title="about">
-                <main id="resume" className="flex flex-row  h-full">
-                    <div className="flex-col w-2/3">
-                        {console.log(timeline)}
+
+                <main
+                    id="resume"
+                    className="flex flex-row portrait:flex-col-reverse  h-full bg-green-200"
+                >
+                    <div className="flex-col w-2/3 portrait:flex-row portrait:w-full portrait:text-center">
                         <Timeline timeline={timeline} />
                     </div>
-                    <div className="flex-col w-1/3 p-8 bg-thi5 text-thi1 overflow-auto">
+                    <div className="flex-col w-1/3 portrait:flex-row portrait:w-full portrait:text-center p-8 bg-thi5 text-thi1 overflow-auto">
+
                         <div className=" mb-2 ">
                             <h1 className="text-center text-3xl font-semibold mb-2 text-thi3">
                                 Thiago Moreira Ribeiro

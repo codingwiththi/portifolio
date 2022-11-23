@@ -8,8 +8,9 @@ import ReactCountryFlag from "react-country-flag";
 export default function Navbar({ language, setLanguage, menu }) {
     return (
         <Popover className="relative ">
-            <div className=" mx-auto px-8 py-2 ">
-                <div className="flex justify-between items-center p-4 md:justify-start md:space-x-10 border-b-2 border-thi3">
+            <div className=" mx-auto lg:px-8 sm:px-2 md:px-2 md:py-2 sm:py-0 lg:py-2 ">
+                <div className="flex justify-between items-center p-4 sm:p-1  md:justify-start md:space-x-10 border-b-2 border-thi3">
+
                     <div className="flex justify-start lg:w-0 lg:flex-1 ">
                         <Link
                             href="#"
@@ -20,7 +21,9 @@ export default function Navbar({ language, setLanguage, menu }) {
                     </div>
 
                     <div className="flex flex-row">
-                        <div className="flex items-center justify-end  ">
+
+                        <div className=" portrait:hidden flex items-center justify-end  ">
+
                             {menu?.map((item) => (
                                 <Tooltip
                                     title={item.name}
@@ -72,19 +75,7 @@ export default function Navbar({ language, setLanguage, menu }) {
                                         </button>
                                     </Tooltip>
                                 )}
-                                {/* <Link
-                                    href="#"
-                                    className="text-base font-medium text-thi5 hover:text-thi3 m-2"
-                                >
-                                    PT <GiBrazilFlag />
-                                </Link>
-                                <Link
-                                    href="#"
-                                    className="text-base font-medium text-thi5 hover:text-thi3 m-2"
-                                >
-                                    EN
-                                    <GiUsaFlag />
-                                </Link> */}
+
                             </div>
                         </div>
                     </div>
