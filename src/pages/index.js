@@ -1,7 +1,5 @@
-import { Fab } from "@mui/material";
 import { useState } from "react";
 import { BsEnvelope, BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
-import { Link } from "react-scroll";
 import AboutMe from "../components/AboutMe/AboutMe";
 import FloatingActionButton from "../components/FloatingActionButton";
 import Footer from "../components/Footer/Footer";
@@ -36,7 +34,7 @@ export default function Home() {
 
     return (
         <>
-            <div className="bg-thi1">
+            <div className="bg-thi1 font-Poppins">
                 <FloatingActionButton />
                 <Navbar
                     language={language}
