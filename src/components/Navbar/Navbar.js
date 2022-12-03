@@ -7,13 +7,13 @@ import ReactCountryFlag from "react-country-flag";
 
 export default function Navbar({ language, setLanguage, menu }) {
     return (
-        <Popover className="relative ">
+        <Popover className="relative">
             <div className=" mx-auto lg:px-8 sm:px-2 md:px-2 md:py-2 sm:py-0 lg:py-2 ">
                 <div className="flex justify-between items-center p-4 sm:p-1  md:justify-start md:space-x-10 border-b-2 border-thi3">
                     <div className="flex justify-start lg:w-0 lg:flex-1 ">
                         <Link
                             href="#"
-                            className="font-poppins text-4xl  text-thi5 font-light "
+                            className=" text-4xl  text-thi5 font-light "
                         >
                             Coding With Thi.
                         </Link>

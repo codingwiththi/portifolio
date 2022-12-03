@@ -34,31 +34,33 @@ export default function AboutMe({ language }) {
                     </div>
                     <div className="flex-col w-1/3 portrait:flex-row portrait:w-full portrait:text-center p-8 bg-thi5 text-thi1 overflow-auto">
                         <div className=" mb-2 ">
-                            <h1 className="text-center text-3xl font-semibold mb-2 text-thi3">
+                            <h1 className="text-center text-2xl font-semibold mb-2 text-thi3">
                                 Thiago Moreira Ribeiro
                             </h1>
-                            <h2 className="text-center text-xl font-light ">
+                            <h2 className="text-center text-lg font-medium">
                                 {title}
                             </h2>
-                            <h2 className=" text-xl font-light p-4">
+                            <p className=" text-md font-normal p-4 tracking-normal ">
                                 {description}
-                            </h2>
+                            </p>
                         </div>
-                        <div className="font-light text-lg px-2 mb-12 ">
-                            <div className="flex flex-col  font-light text-lg px-2 mb-12">
-                                <h2 className="text-xl font-semibold  text-thi3">
+                        <div className="px-2 mb-12 ">
+                            <div className="flex flex-col px-2 mb-12">
+                                <h2 className="text-xl font-semibold  text-thi2">
                                     Skills
                                 </h2>
                                 {skills.map((skill) => (
                                     <div key={skill.title}>
-                                        <h3 className="text-lg font-semibold  text-thi1">
+                                        <h3 className="text-lg font-medium ">
                                             {skill.title}
                                         </h3>
                                         <ul className="grid grid-cols-3 portrait:grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
                                             {skill.list.map((item) => (
                                                 <li key={item}>
                                                     <div className="bg-thi4 hover:bg-thi1 hover:text-thi5 p-2 m-1 rounded-md">
-                                                        {item}
+                                                        <p className="text-base font-normal">
+                                                            {item}
+                                                        </p>
                                                     </div>
                                                 </li>
                                             ))}

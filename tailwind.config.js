@@ -420,6 +420,7 @@ module.exports = {
                 '"Courier New"',
                 "monospace",
             ],
+            Poppins: ["Poppins", "sans-serif"],
         },
         fontSize: {
             xs: ["0.75rem", { lineHeight: "1rem" }],
