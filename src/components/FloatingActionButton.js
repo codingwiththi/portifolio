@@ -23,7 +23,7 @@ export default function FloatingActionButton() {
                     left: "auto",
                     position: "fixed",
                 }}
-                className="bg-thi5 text-thi3 hover:text-thi5 hover:bg-thi3"
+                className="bg-thi5  text-thi3  hover:text-thi5 hover:bg-thi3 dark:bg-thi1 dark:text-thi4"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

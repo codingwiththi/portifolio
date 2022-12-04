@@ -8,6 +8,11 @@ import Navbar from "../components/Navbar/Navbar";
 
 export default function Home() {
     const [language, setLanguage] = useState("pt");
+    //tailwindcss dark mode toggle button state and function to change it to light mode or dark mode
+    const [darkMode, setDarkMode] = useState(false);
+    const toggleDarkMode = () => {
+        setDarkMode(!darkMode);
+    };
 
     const menu = [
         {
@@ -34,16 +39,20 @@ export default function Home() {
 
     return (
         <>
-            <div className="bg-thi1 font-Poppins">
-                <FloatingActionButton />
-                <Navbar
-                    language={language}
-                    setLanguage={setLanguage}
-                    menu={menu}
-                />
-                <Hero language={language} />
-                <AboutMe language={language} />
-                <Footer menu={menu} />
+            <div className={`${darkMode ? "dark" : ""}`}>
+                <div className="bg-thi1 dark:bg-thi5  font-Poppins">
+                    <Navbar
+                        menu={menu}
+                        language={language}
+                        setLanguage={setLanguage}
+                        darkMode={darkMode}
+                        toggleDarkMode={toggleDarkMode}
+                    />
+                    <Hero language={language} />
+                    <AboutMe language={language} />
+                    <FloatingActionButton />
+                    <Footer />
+                </div>
             </div>
         </>
     );
